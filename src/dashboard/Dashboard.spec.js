@@ -3,15 +3,15 @@ import { render, fireEvent } from "@testing-library/react";
 //
 import Dashboard from "./Dashboard";
 
-test("Dashboard renders withour crashing", () => {
+// component renders correctly
+test("Dashboard renders correctly", () => {
   render(<Dashboard />);
 });
 
-// test("should match snapshot", () => {
-//   expect(render(<Dashboard />)).toMatchSnapshot();
-// });
-
-//
+//snapshot
+test("should match snapshot", () => {
+  expect(render(<Dashboard />)).toMatchSnapshot();
+});
 
 // same test for it shows controls and display
 test("default state is unlocked and open", () => {
