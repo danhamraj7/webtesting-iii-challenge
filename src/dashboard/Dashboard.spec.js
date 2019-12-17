@@ -27,7 +27,7 @@ test("default state is unlocked and open", () => {
   expect(closeBtn.disabled).toBe(false);
 });
 
-//
+// cannot be closed or open if it is locked
 test("cannot be closed or opened if it it locked", () => {
   const { getByText } = render(<Dashboard />);
 
